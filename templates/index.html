@@ -1,0 +1,724 @@
+{% extends "layout-index.html" %}
+{% load static %}
+{% block title %}
+    Uncover Myself | AI-Powered Quizzes for Self-Discovery
+{% endblock %}
+{% block meta %}
+     <meta content="Unleash your potential and discover your true self with Uncover Myself! Our free, fun, and
+ AI-powered quizzes provide personalized insights and actionable recommendations to
+ guide your personal and professional growth." name="description">
+    <meta content="" name="keywords">
+    <meta name="google-site-verification" content="ATEKOJ7ptF5v8mWOSBb_l3Uh00cbDGQLu7XoSIPJDm0" />
+    <meta name="msvalidate.01" content="866CB5BC390E23A638BD6A073AAEFFE3" />
+<style>
+  .team-member {
+    width: 100%;
+  }
+  .member-info {
+    margin-top: auto;
+  }
+</style>
+{% endblock %}
+{% block content %}
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="introduction" class="hero section">
+
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+<h1 data-aos="fade-up" style="font-size: 36px;">Unleash Your Potential. Discover Your True Self with Uncover Myself!</h1>
+<p data-aos="fade-up" data-aos-delay="100" style="font-size: 16px;">Feeling lost and unfulfilled? Take our fun, AI-powered quizzes and unlock the amazing YOU. Unleash your hidden strengths, understand your unique personality, and get a roadmap for personal and professional growth.</p>
+                        <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+                            <a href="#quiz-library" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+                            {#              <a href="https://www.youtube.com/watch?v=00000000" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>#}
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                        <img src="{% static 'logos/cover.png' %}" class="img-fluid animated" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row gx-0">
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <div style="text-align: left !important;" class="content ">
+                            {#              <h3> Unleash Your Potential. Discover Your True Self</h3>#}
+                            <h2>
+                                Welcome to Uncover Myself, your free gateway to self-discovery powered by
+                                cutting-edge AI quizzes. <br>
+
+                            </h2>
+                            Our engaging and insightful questions, paired with powerful
+                            AI analysis, will help you:
+                            <ul>
+                                <li>
+                                    Understand your personality and what makes you unique.
+                                </li>
+                                <li>
+                                    Unlock your hidden strengths and passions.
+                                </li>
+                                <li>
+                                    Gain valuable insights to guide your personal and professional growth.
+                                </li>
+                            </ul>
+                            <p>
+                                Ready to embark on this exciting journey? Dive into our library of quizzes and start
+                                uncovering your true potential today! </p>
+                            <div class="text-center text-lg-start">
+                                <a href="/#quiz-library"
+                                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span> Start Now!</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="{% static 'landing/assets/img/about.jpg' %}" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- /About Section -->
+
+        <!-- Values Section -->
+        <section id="why-uncover-yourself" class="values section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                {#            <h2>Our Values</h2>#}
+                <p>Why Uncover Yourself?</p>
+            </div><!-- End Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <p style="font-size: 20px !important;">Tired of feeling lost in the crowd? Uncertain how to leverage
+                    your strengths or chart
+                    your ideal career path? You deserve to understand yourself better and unleash your
+                    full potential. Here's why Uncover Myself is the perfect partner on your journey of
+                    self-discovery.</p>
+            </div>
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="{% static 'landing/assets/img/values-1.png' %}" class="img-fluid" alt="">
+                            <h3>AI-Backed<br>Insights</h3>
+                            <p>Our quizzes use advanced AI and established personality frameworks to deliver precise, personalized results you can rely on.</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="{% static 'landing/assets/img/values-2.png' %}" class="img-fluid" alt="">
+                            <h3>Actionable<br>Guidance</h3>
+                            <p>We don't just define your personality. We provide specific recommendation to leverage your strengths and address challenges.
+                            </p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="{% static 'landing/assets/img/values-4.png' %}" class="img-fluid" alt="">
+                            <h3>Quick & Fun<br>Quiz</h3>
+                            <p>Forget boring questionnaires! Our quizzes are short and enjoyable, ensuring a fun and engaging experience.
+                            </p>
+                        </div>
+                    </div><!-- End Card Item -->
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img src="{% static 'landing/assets/img/values-3.png' %}" class="img-fluid" alt="">
+                            <h3>Completely<br>Free</h3>
+                            <p>Discovering your potential shouldn't be expensive. Our quizzes are free, allowing you to explore yourself without any costs.</p>
+                        </div>
+                    </div><!-- End Card Item -->
+                </div>
+
+            </div>
+
+        </section><!-- /Values Section -->
+
+        <!-- Services Section -->
+        <section id="quiz-library" class="services section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <p> Our Quiz Library<br></p>
+                <h2>Explore Your Potential with Our Quiz Library</h2>
+
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class=" col " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-cyan position-relative">
+                            <a href="#1"><h3> Uncover Your Personality & Values</h3></a>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class=" col " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-orange position-relative">
+                            <a href="#2"><h3>Discover Your Strengths & Passions</h3></a>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class=" col " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-teal position-relative">
+                            <a href="#3"><h3>Explore Your Interests & Preferences</h3></a>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class=" col " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-red position-relative">
+                            <a href="#4"><h3>Go Beyond the Basics</h3></a>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class=" col " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-indigo position-relative">
+                            <a href="#5"><h3>Relationship & Personal Growth</h3></a>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class="row gy-4">
+
+                        <div id="1" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-item item-cyan position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Myers-Briggs Type Indicator (MBTI)</h3>
+                                <p>Discover your preferences in four key
+                                    areas (Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling,
+                                    Judging/Perceiving) to understand how you process information and interact
+                                    with the world.
+                                </p>
+                                <a href="/ai-powered-mbti-quiz-self-discovery-app" class="read-more "><span>Learn More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="/myers-briggs-type-indicator-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-item item-cyan position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Enneagram of Personality</h3>
+                                <p class="mb-5">Dive deeper than MBTI by exploring your core motivations,
+                                    fears, and desires through nine distinct personality types.
+                                </p>
+                                <a href="/ai-enneagram-quiz-self-discovery" class="read-more "><span>Learn More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="/enneagram-quiz" class="read-more"><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-item item-cyan position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Big Five Personality Test</h3>
+                                <p class="mb-4">Discover your OCEAN (Openness,
+                                    Conscientiousness, Extraversion, Agreeableness, Neuroticism) traits, a widely
+                                    used framework for understanding your personality.
+
+                                </p>
+                                <a href="/big-five-test-understand-personality" class="read-more "><span>Learn More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="/big-five-personality-test-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-item item-cyan position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Values Assessment <br></h3>
+                                <p class="mb-5"> Identify your fundamental values that guide your
+                                    decisions and influence your goals.
+                                </p>
+                                <a href="/values-assessment-find-your-guiding-light" class="read-more "><span>Learn More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="values-assessment-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div id="2" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-item item-orange position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Strengths Finder</h3>
+                                <p class="mb-5">Uncover your top strengths based on Gallup's
+                                    CliftonStrengths assessment and learn how to leverage them for success.</p>
+                                <a href="/unleash-strengths-strengthsfinder-test"  class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/strengthsfinder-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-item item-orange position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Skills Assessment</h3>
+                                <p class="mb-5"> Hone in on specific skills like communication,
+                                    problem-solving, or leadership with targeted quiz.</p>
+                                <a href="/skills-assessment-reach-your-goals" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/skills-assessment-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div id="3" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-item item-teal position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Career Interest Inventories</h3>
+                                <p>Align your interests and skills with potential career
+                                    paths through insightful quiz.</p>
+                                <a href="/career-interest-test-find-dream-job" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/career-interest-inventories-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-item item-teal position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Learning Style Quiz</h3>
+                                <p> Discover if you learn best visually, auditorily,
+                                    kinesthetically, or through a combination of methods.
+                                </p>
+                                <a href="/learning-style-quiz-unlock-potential" class="read-more"><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/learning-style-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-item item-teal position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Hobby & Leisure Quiz</h3>
+                                <p>Find new interests or connect with communities based
+                                    on shared hobbies.</p>
+                                <a href="/hobby-leisure-quiz-find-your-passion" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/hobby-leisure-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div id="4" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="service-item item-red position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Motivational Needs Assessment</h3>
+                                <p>Understand what truly drives you by
+                                    exploring your intrinsic vs. extrinsic motivators.
+                                </p>
+                                <a href="/motivational-needs-assessment-fulfilling-life" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/motivational-needs-assessment-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="service-item item-red position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Decision-Making Style Quiz</h3>
+                                <p>Discover your preferred approach to
+                                    decision-making, whether data-driven, intuitive, or consensus-oriented.
+
+                                </p>
+                                <a href="/decision-making-quiz-choose-confidently" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/decision-making-style-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="service-item item-red position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Worldview Quiz</h3>
+                                <p>Explore your perspective on life, society, and your place in the
+                                    world.
+
+                                </p>
+                                <a href="/worldview-quiz-understand-values" class="read-more"><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="worldview-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div id="5" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-item item-indigo position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Love Language Quiz</h3>
+                                <p>Foster self-awareness in relationships by understanding
+                                    how you give and receive love.
+                                </p>
+                                <a href="/love-language-quiz-stronger-relationships" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/love-language-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-item item-indigo position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3> Relationship Style Quiz</h3>
+                                <p>Identify your communication style and attachment
+                                    patterns for healthier connections.
+
+                                </p>
+                                <a href="/relationship-communication-quiz" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/relationship-style-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-item item-indigo position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Leadership Style Quiz</h3>
+                                <p>Explore your natural leadership tendencies and how
+                                    you might motivate others.
+
+                                </p>
+                                <a href="/leadership-style-quiz-confident-leader" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/leadership-style-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-item item-indigo position-relative">
+                                <i class="bi bi-list-task icon"></i>
+                                <h3>Financial Personality Quiz</h3>
+                                <p>Gain insight into your attitude towards money, spending, and saving habits.
+
+                                </p>
+                                <a href="/financial-personality-quiz-healthy-money-mindset" class="read-more "><span>Learn More</span> <i
+                                        class="bi bi-arrow-right"></i></a>
+                                <a href="/financial-personality-quiz" class="read-more "><span>Take the Quiz</span>
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div><!-- End Service Item -->
+
+                        {#                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">#}
+                        {#                    <div class="service-item item-pink position-relative">#}
+                        {#                        <i class="bi bi-chat-square-text icon"></i>#}
+                        {#                        <h3>Dolori Architecto</h3>#}
+                        {#                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.#}
+                        {#                            Corrupti recusandae ducimus enim.</p>#}
+                        {#                        <a href="#" class="read-more stretched-link"><span>Learn More</span> <i#}
+                        {#                                class="bi bi-arrow-right"></i></a>#}
+                        {#                    </div>#}
+                        {#                </div><!-- End Service Item -->#}
+
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- /Services Section -->
+
+        <!-- Process 1 - Bootstrap Brain Component -->
+<section id="how-it-works" class="services section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <p> How Does Uncover Myself Work?<br></p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-xl-start">
+            <p class="lead fs-4 text-secondary mb-5">
+                Uncovering yourself is as easy as 1, 2, 3! Here's how our AI-powered quizzes help you embark on a journey of self-discovery:
+            </p>
+            <div class="col col-sm-12 col-md-6">
+                <div class="d-flex mb-4">
+                    <div>
+                        <span class="btn btn-primary bsb-btn-circle pe-none me-4">1</span>
+                    </div>
+                    <div>
+                        <h4 class="mb-3">Choose Your Quiz</h4>
+                        <p class="mb-0 text-secondary">Explore our wide range of quizzes, each tailored to uncover different facets of your personality, strengths, and interests. Whether you're curious about your leadership style or want to explore your learning preferences, we have the perfect quiz for you!</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div>
+                        <span class="btn btn-primary bsb-btn-circle pe-none me-4">2</span>
+                    </div>
+                    <div>
+                        <h4 class="mb-3">Answer Engaging Questions</h4>
+                        <p class="mb-0 text-secondary">Our quizzes are designed to be interactive and insightful. Each question is carefully crafted to reveal your unique traits and preferences in a fun and engaging way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-md-6">
+                <div class="d-flex mb-4">
+                    <div>
+                        <span class="btn btn-primary bsb-btn-circle pe-none me-4">3</span>
+                    </div>
+                    <div>
+                        <h4 class="mb-3">Receive Personalized Results</h4>
+                        <p class="mb-0 text-secondary">Upon completion, our AI analyzes your answers to generate a personalized report. This report highlights your key strengths, personality traits, and areas for growth, helping you understand and develop your potential.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div>
+                        <span class="btn btn-primary bsb-btn-circle pe-none me-4">4</span>
+                    </div>
+                    <div>
+                        <h4 class="mb-3">Explore Actionable Recommendations</h4>
+                        <p class="mb-0 text-secondary">Don't just learn—act! We offer practical tips based on your results, helping you leverage strengths, overcome challenges, and make decisions aligned with your values. Start your journey to a more fulfilling life today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Pricing Section -->
+
+
+        <section id="start-your-journey" class="features section">
+
+            <!-- Section Title -->
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <p>Start Your Journey<br></p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-5">
+
+                    <div class="col-xl-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
+                        <img src="{% static 'landing/assets/img/features.png' %}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-xl-6 d-flex">
+                        <div class="row align-self-center gy-4">
+                            <p>Ready to unlock your potential and embark on a life-changing adventure? Uncover
+                                Yourself is here to guide you every step of the way.
+                            </p>
+                            <h4>Here's why you should start today:</h4>
+                            <div class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>It's free! Gain valuable insights about yourself without breaking the bank.</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>It's quick! Each quiz takes just minutes to complete, fitting seamlessly into your
+                                        busy schedule.</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+
+                            <div class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>It's life-changing! Self-discovery is the key to personal and professional growth,
+                                        leading to a more fulfilling existence.</h3>
+                                </div>
+                            </div><!-- End Feature Item -->
+<p>Don't wait any longer! Take control of your future and start uncovering the amazing person you are.</p>
+<div style="text-align: center;">
+    <a href="/#quiz-library" style="
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    ">
+        Start Your Journey Now!
+    </a>
+</div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<section id="team" class="team section ">
+
+  <!-- Section Title -->
+  <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <p>Our Team</p>
+      <p style="font-size: 16px">
+        Meet the awesome team behind Uncover Myself, the folks lighting the way with innovation and creativity. Driven by a passion for trying new things and making the world a better place, this team is always pushing boundaries and inspiring change.
+      </p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4 justify-content-center text-center">
+
+      <div class="col-12 col-md-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex flex-column align-items-center">
+          <div class="member-info text-center">
+            <h4>Mohamad Adriyanto</h4>
+            <span> Founder & Chief</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member d-flex flex-column align-items-center">
+          <div class="member-info text-center">
+            <h4>Usman Tahir</h4>
+            <span>Technology Lead</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-12 col-md-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member d-flex flex-column align-items-center">
+          <div class="member-info text-center">
+            <h4>Irfan Rahadian Adriyanto</h4>
+            <span>Content Specialist</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-12 col-md-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex flex-column align-items-center">
+          <div class="member-info text-center">
+            <h4>Audrey Shafia Dwinandita</h4>
+            <span>Research Specialist</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-12 col-md-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex flex-column align-items-center">
+          <div class="member-info text-center">
+            <h4>Rizka Amalia Windriani</h4>
+            <span>Communications Specialist</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+<footer id="contact-us" class="footer">
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6">
+          <h4 style="font-size: 24px;">We're Here to Help!</h4>  <p style="font-size: 16px;">At Uncover Myself, we're passionate about empowering individuals on their journeys of self-discovery. We're constantly striving to improve our platform and provide the best possible experience for our users.</p>
+          <p style="font-size: 16px;">If you have any questions, feedback, or suggestions, we'd love to hear from you! Feel free to reach out to our friendly team at info@uncovermyself.com.</p>
+          <p><a href="https://www.ontoplist.com/web-development-companies/" target="_blank"><img src="https://www.ontoplist.com/images/ontoplist31.png?id=6672243313713" alt="Best Web Development Companies - OnToplist.com" border="0"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-6 col-md-6 footer-links">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#why-uncover-yourself">Why Uncover Yourself?</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#quiz-library">Our Quiz Library</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#how-it-works">How It Works</a>
+          </li>
+                    <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="http://uncovermyself.com/myers-briggs-type-indicator-quiz/">Take The Quiz</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 col-md-6 footer-links">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#start-your-journey">Start Your Journey</a>
+          </li>
+                    <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="https://blog.uncovermyself.com">Our Official Blog</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="https://medium.com/@adriyanto/measuring-love-exploring-the-intersection-of-ai-and-human-emotion-87d0aaa986de">Founder's Blog Post</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#team">Our Team</a>
+          </li>
+          <li style="position: relative; padding-left: 1.5em;">
+            <i class="bi bi-chevron-right" style="position: absolute; left: 0; top: 0.1em; display: none;"></i>
+            <a href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Uncover Myself</strong> <span>All Rights Reserved</span></p>
+    <div class="credits"></div>
+  </div>
+
+</footer>
+
+{% endblock %}

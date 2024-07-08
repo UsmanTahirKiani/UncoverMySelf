@@ -1,0 +1,48 @@
+{% include 'layout.html' %}
+{% load static %}
+{% block title %}
+
+{% endblock %}
+
+{% block meta %}
+
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+{% block content %}
+  <main>
+        <div class="container">
+
+            <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+{#                <h2>The page you are looking for doesn't exist.</h2>#}
+                <p>
+                    We're sorry, but something unexpected happened while creating your personalized report. Our AI
+                    engine is encountering some technical difficulties at the moment.
+                </p>
+                <p>
+                    Don't worry, this doesn't reflect on you or your insightful answers! We're working on resolving the
+                    issue as quickly as possible.
+                </p>
+                <p>
+                    In the meantime, why not try exploring another quiz from our 16 unique series? You might uncover
+                    something new and exciting about yourself!
+                </p>
+                <p>
+                    We appreciate your patience and understanding.
+
+                </p>
+                <a class="btn" href="/">Back to home</a>
+                <img src="{% static  'assets/img/not-found.svg' %}" class="img-fluid py-5" alt="Page Not Found">
+                <div class="credits">
+                </div>
+            </section>
+
+        </div>
+    </main>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+
+
+

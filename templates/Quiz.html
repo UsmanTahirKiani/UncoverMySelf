@@ -1,0 +1,148 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    {{ quiz_title }}
+{% endblock %}
+
+{% block meta %}
+    <meta content="{{ meta }}" name="description">
+    <meta content="" name="keywords">
+{% endblock %}
+
+
+{% block head %}
+    <style>
+        .image-container {
+            position: relative;
+            width: 100%; /* Adjust width as needed */
+            height: 100%; /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.65;
+        }
+        .markdown-content h2 {
+                color: #012970;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>{{ title }}</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Quiz</li>
+                    <li class="breadcrumb-item active">{{ quiz_title }}</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section dashboard">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="image-container">
+                                    <img src="{% static image %}" class="img-fluid rounded-start"
+                                         alt="...">
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h2 class="card-title">{{ quiz_title }}</h2>
+                                    <p class="card-text">Welcome to {{ quiz_title }} - Get ready to unlock
+                                        your
+                                        full potential and discover your true self with Uncover Myself!</p>
+
+                                    <a href="{% url learn_more %}" type="button" class="btn btn-outline-primary">Learn More</a>
+
+                                    <h2 class="card-title"> How to Take the Quiz:</h2>
+
+                                    <p class="card-text"><b class="card-title">Answer Each Question Thoughtfully: </b>
+                                        Each quiz consists of 15 multiple-choice
+                                        questions designed to explore different facets of your personality. For each
+                                        question, choose the answer that best or most closely reflects your thoughts,
+                                        feelings, or behaviors.
+                                    </p>
+
+                                    <p class="card-text"><b class="card-title">Submit Your Answers: </b> Once you've
+                                        completed all the questions, click the "Submit"
+                                        button. Our AI engine will process your responses to generate a personalized
+                                        report. Please be patient; this process may take a few seconds.
+                                    </p>
+
+                                    <p class="card-text"><b class="card-title">Privacy and Data Collection: </b>
+                                        "Uncover Myself" values your privacy. We do not
+                                        collect or store any data you submit. However, please note that our AI engine
+                                        partner might collect anonymized data. Rest assured, your responses are
+                                        submitted
+                                        without any personal information attached.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-12 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-header">{{ quiz_title }}</h5>
+                            <form  method="POST" class="mx-5">
+                                {% csrf_token %}
+                                <input class="form-check-input" type="hidden" name="quiz_number" id="quiz-{{ quiz_number }}" value="{{ quiz_number }}" >
+
+                               {% for question in quiz %}
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label card-title">{{ question.question_num }}{{ ". " }}{{ question.question }}</legend>
+                                    <div class="col-sm-10 ">
+                                        {% for option in question.options %}
+                                            <div class="form-check">
+                                                <input required class="form-check-input"
+                                                       type="radio"
+                                                       name="q{{ question.question_num }}"
+                                                       id="o{{ option.option_index }}"
+                                                       value="{{ option.option_index }}"
+                                                        {% if answers.forloop.counter0 == option.option_index %}checked{% endif %}
+                                                >
+                                                <label class="form-check-label" for="{{ option.option_index }}">
+                                                     {{ option.option }}
+                                                </label>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </fieldset>
+                                {% endfor %}
+
+                                <div class="g-recaptcha" data-sitekey="6LcK6vQpAAAAAOQj_Q9Fwv5qzLW_3nCbV4KFyI9y"></div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+{% endblock %}
+
+{% block scripts %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}
+
